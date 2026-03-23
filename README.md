@@ -1,85 +1,73 @@
-# System (Pan-Tilt) śledzenia obiektów z uzyciem obrazu z kamery
+# 🎯 System śledzenia obiektów (Pan-Tilt) z wykorzystaniem wizji komputerowej
 
-## 📌 Opis
-Konstrukcja i realizacja ukladu śledzenia obiektów. Składa się z kamery i lasera zamocowanych na platformie o 2 stopniach swobody napędzanej 2 silnikami krokowymi.
-Wykrywanie oraz sledzenie realizowane jest poprzez analizę obrazu z uzyciem biblioteki OpenCV oraz YOLO.
-Sterowanie jest oparte na algorytmie predykcyjnym, dzięki czemu mozliwe jest wyeliminowanie opoźnień i zrównanie osi lasera z celem podczas jego ruchu
+## 📌 Opis projektu
+Projekt przedstawia system śledzenia obiektów w czasie rzeczywistym oparty na platformie typu **pan-tilt (2 DOF)**.  
+Układ wykorzystuje kamerę oraz wskaźnik laserowy zamocowane na ruchomej konstrukcji napędzanej silnikami krokowymi.
+
+Detekcja i śledzenie obiektów realizowane są z wykorzystaniem metod wizji komputerowej (**OpenCV + YOLO**), natomiast sterowanie opiera się na podejściu predykcyjnym, co pozwala ograniczyć opóźnienia i zwiększyć dokładność śledzenia.
 
 <img width="436" height="495" alt="image" src="https://github.com/user-attachments/assets/0d5542f8-10fc-4622-b5b3-cfccec90ea6a" />
-
 
 ---
 
 ## 🎯 Cel projektu
-- Zaprojektowanie oraz wykonanie konstrukcji
-- dobór elementów elektronicznych oraz mikrokontrolera
-- Algorytm rozpoznawania i śledzenia obiektów
-- Precyzyjne śledzenie obiektów w osi kamery
+- Projekt i wykonanie konstrukcji mechanicznej (2 DOF)
+- Dobór elektroniki i mikrokontrolera
+- Implementacja algorytmu detekcji i śledzenia obiektów
+- Opracowanie układu sterowania zapewniającego płynne i precyzyjne śledzenie
 
 ---
 
-## 🛠️ Narzędzia
-- Matlab / Simulink
-- Python (OpenCV, YOLO, NumPy)
-- Arduino IDE (C++)
-- Filtracja sygnału (Filtr kalmana)
-- STM32Cube IDE
+## 🛠️ Wykorzystane narzędzia i technologie
+- **Python** (OpenCV, YOLO, NumPy)
+- **MATLAB / Simulink**
+- **STM32 (STM32CubeIDE)**
+- **Arduino IDE (C++)**
+- **Filtr Kalmana**
+- Sterowanie silnikami krokowymi
 
+---
+
+## 🧠 Zakres mojej pracy
+- Opracowanie modelu matematycznego układu
+- Projekt i wykonanie konstrukcji mechanicznej
+- Implementacja sterowania silnikami krokowymi
+- Opracowanie algorytmu wizyjnego (detekcja + tracking)
+- Implementacja filtru Kalmana do estymacji położenia
+- Projekt i implementacja regulatora predykcyjnego
 
 ---
 
-## 🧠 Co zrobiłem
-- opracowałem model matematyczny układu oraz potwierdziłem skuteczność architektury układu sterowania
-- Zaprojektowałem oraz wykonałem całą konstrukcję urządzenia
-- zaimplementowałem sterowanie silnikami krokowymi
-- Opracowałem algorytm wizyjny
-- Wykorzystałem filtr Kalmana do poprawy jakości śledzenia
-- Zaprojektowałem i zaimplementowałem układ regulacji predykcyjnej
-
----
+## ⚙️ Architektura systemu
 Schemat układu sterowania:
+
 <img width="1537" height="872" alt="image" src="https://github.com/user-attachments/assets/1930986f-356c-4dd5-bfc1-bfababd75abf" />
 
-
+---
 
 ## 📊 Wyniki
 
-### Wykrywanie obiektów
-- czas regulacji: ~2 s dla skoku 25 mm
-- test dla przejścia z (25,25) → (0,0)
-
-<img width="400" src="https://github.com/user-attachments/assets/6be00de1-8fcb-4ea3-a438-ef2cae340720" />
-
----
-
-### Odporność na zakłócenia
-- układ stabilizuje kulkę po zaburzeniu (pchnięcie)
-
-<img width="400" src="https://github.com/user-attachments/assets/662a6bfb-986c-46cd-9281-b41ddc3d0b15" />
-
----
-
-### Trajektorie ruchu
-- poprawna realizacja ruchu po okręgu i kwadracie
-- zgodność z wartością zadaną
-
-<img width="300" src="https://github.com/user-attachments/assets/6d6e8734-25c3-461f-b381-3cc0a7beb066" />
-
----
-
 ## 🌀 Demo wideo (kliknij, aby obejrzeć)
 
-
-### Sledzenie czlowieka 
-[![Trajektoria](https://img.youtube.com/vi/QgTJa6kDOz0/0.jpg)](https://www.youtube.com/watch?v=QgTJa6kDOz0)
-
+### Śledzenie obiektu
+[![Demo](https://img.youtube.com/vi/rupabkPK9xA/0.jpg)](https://youtu.be/rupabkPK9xA)
 
 ---
 
 ## 📉 Ograniczenia
--zbyt wolna kamera
+- Ograniczona częstotliwość odświeżania kamery
+- Niedoskonałości mechaniczne wpływające na precyzję
+- Opóźnienia wynikające z przetwarzania obrazu
 
 ---
 
-## 📄 Raport
-[Pełny raport PDF](./raport.pdf)
+## 🚀 Możliwe usprawnienia
+- Zastosowanie szybszej kamery
+- Lepsza kalibracja i sztywniejsza konstrukcja
+- Implementacja bardziej zaawansowanych algorytmów sterowania (np. MPC)
+- Optymalizacja kodu wizyjnego pod kątem wydajności
+
+---
+
+## 📬 Kontakt
+Jeśli masz pytania lub chcesz pogadać o projekcie — śmiało napisz 🙂
