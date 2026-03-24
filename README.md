@@ -52,7 +52,8 @@ Szczegóły dostępne przy kontakcie ze mną.
 
 ## 📊 Dotychczasowe wyniki
 ### Wyniki symulacji (sterowanie z predykcją), Simulink
-
+Weryfikacja działania regulatora predykcyjnego, trajektoria z symulowanymi zakłóceniami.
+W symulacji regulator spełnia swoją funkcję bardzo dobrze.
 <img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/859c2298-bada-4fa8-af31-b4bce74b52ea" />
 
 
