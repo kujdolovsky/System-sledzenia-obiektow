@@ -41,11 +41,13 @@ Detekcja i śledzenie obiektów realizowane są z wykorzystaniem metod wizji kom
 ## ⚙️ Architektura systemu
 Schemat układu sterowania:
 
-<img width="1537" height="872" alt="image" src="https://github.com/user-attachments/assets/1930986f-356c-4dd5-bfc1-bfababd75abf" />
+<img width="1576" height="891" alt="image" src="https://github.com/user-attachments/assets/bf109700-8189-4302-a185-9b1dec36c438" />
+
 
 ---
-## Schemat samego regulatora predykcyjnego 1 osi w simulinku:
-Regulator korzystając z danych o aktualnej pozycji obiektu oraz platformy wylicza błąd śledzenia jaki wystąpi po czasie opóźnień, błąd ten trafia następnie do regulatora PID, który steruje prędkością silnika. Szczegóły dostępne przy kontakcie ze mną.
+## Schemat modelu regulatora predykcyjnego 1 osi w Simulinku:
+Regulator korzystając z danych o aktualnej pozycji obiektu oraz platformy wylicza błąd śledzenia jaki wystąpi po czasie opóźnień, błąd ten trafia następnie do regulatora PID, który steruje prędkością silnika.
+Szczegóły dostępne przy kontakcie ze mną.
 <img width="1706" height="639" alt="image" src="https://github.com/user-attachments/assets/2ab24032-dfab-4c39-b323-b9f10e0baa82" />
 
 ## 📊 Dotychczasowe wyniki
@@ -70,10 +72,11 @@ Regulator korzystając z danych o aktualnej pozycji obiektu oraz platformy wylic
 ---
 
 ## 🚀 Dalszy rozwój
-- Zastosowanie szybszej kamery
+- Zastosowanie szybszej kamery global shutter
 - Lepsza kalibracja i sztywniejsza konstrukcja
 - Implementacja algorytmu sterowania predykcyjnego
 - Optymalizacja kodu wizyjnego pod kątem wydajności
+- Dodanie enkoderów absolutnych
 
 ---
 
