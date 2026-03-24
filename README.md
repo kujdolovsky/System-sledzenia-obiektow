@@ -44,7 +44,7 @@ Schemat układu sterowania:
 <img width="1537" height="872" alt="image" src="https://github.com/user-attachments/assets/1930986f-356c-4dd5-bfc1-bfababd75abf" />
 
 ---
-schemat samego regulatora predykcyjnego 1 osi w simulinku:
+## Schemat samego regulatora predykcyjnego 1 osi w simulinku:
 Regulator korzystając z danych o aktualnej pozycji obiektu oraz platformy wylicza błąd śledzenia jaki wystąpi po czasie opóźnień, błąd ten trafia następnie do regulatora PID, który steruje prędkością silnika. Szczegóły dostępne przy kontakcie ze mną.
 <img width="1706" height="639" alt="image" src="https://github.com/user-attachments/assets/2ab24032-dfab-4c39-b323-b9f10e0baa82" />
 
