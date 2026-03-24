@@ -74,7 +74,7 @@ Szczegóły dostępne przy kontakcie ze mną.
 ## 🚀 Dalszy rozwój
 - Zastosowanie szybszej kamery global shutter
 - Lepsza kalibracja i sztywniejsza konstrukcja
-- Implementacja algorytmu sterowania predykcyjnego
+- Lepsza regulacja algorytmu sterowania predykcyjnego
 - Optymalizacja kodu wizyjnego pod kątem wydajności
 - Dodanie enkoderów absolutnych
 
