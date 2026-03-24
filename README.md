@@ -41,7 +41,8 @@ Object detection and tracking are implemented using computer vision methods (**O
 ## ⚙️ System Architecture
 Control system diagram:
 
-<img width="1576" height="891" alt="image" src="https://github.com/user-attachments/assets/bf109700-8189-4302-a185-9b1dec36c438" />
+<img width="1387" height="794" alt="image" src="https://github.com/user-attachments/assets/f0880877-1b89-402c-8bc4-d776258b6a50" />
+
 
 ---
 
