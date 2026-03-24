@@ -48,8 +48,9 @@ Schemat układu sterowania:
 Regulator korzystając z danych o aktualnej pozycji obiektu oraz platformy wylicza błąd śledzenia jaki wystąpi po czasie opóźnień, błąd ten trafia następnie do regulatora PID, który steruje prędkością silnika. Szczegóły dostępne przy kontakcie ze mną.
 <img width="1706" height="639" alt="image" src="https://github.com/user-attachments/assets/2ab24032-dfab-4c39-b323-b9f10e0baa82" />
 
-## 📊 Wyniki
+## 📊 Dotychczasowe wyniki
 ### Wyniki symulacji (sterowanie z predykcją), Simulink
+
 <img width="1919" height="923" alt="image" src="https://github.com/user-attachments/assets/859c2298-bada-4fa8-af31-b4bce74b52ea" />
 
 
